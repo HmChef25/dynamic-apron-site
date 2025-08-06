@@ -1,0 +1,11 @@
+.mocktail-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+.mocktail-card:hover {
+  transform: scale(1.05);
+}
+.selected {
+  border-color: #2ecc71;
+}

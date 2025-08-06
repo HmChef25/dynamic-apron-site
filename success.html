@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success | Dynamic Apron</title>
+  <meta name="description" content="Your order was successful! Explore more Mediterranean-inspired meals and mocktails.">
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for optional icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Embedded Styles -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .success-container {
+      text-align: center;
+    }
+
+    .success-card {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .success-icon {
+      width: 80px;
+      margin-bottom: 1rem;
+      animation: pop 0.6s ease-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .success-title {
+      font-size: 2rem;
+      color: #2e7d32;
+      margin-bottom: 0.5rem;
+    }
+
+    .success-message {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2e7d32;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home-btn:hover {
+      background-color: #1b5e20;
+    }
+
+    @media (max-width: 480px) {
+      .success-card {
+        padding: 1.5rem;
+        max-width: 90%;
+      }
+
+      .success-title {
+        font-size: 1.5rem;
+      }
+
+      .success-message {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Success Icon" class="success-icon" />
+      <h1 class="success-title">Order Confirmed!</h1>
+      <p class="success-message">Thanks for choosing Dynamic Apron. Your mocktail bundle is on its way!</p>
+      <a href="/" class="back-home-btn">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
