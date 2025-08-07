@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "destination": "https:///",
+      "destination": "https://thedynamicapron.com/",
       "source": "/(.*)",
       "permanent": true
     }
