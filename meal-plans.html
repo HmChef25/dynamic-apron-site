@@ -62,4 +62,25 @@
   <p><strong>Tags:</strong> Vitamin C, Vegan</p>
   <p><strong>Price:</strong> </p>
   <p><em>Pairs with:</em> Sweet Potato Falafel</p>
-</div></div></section>
+</div></div></section><section id='bundle-builder' style='padding:2rem;'><h2 style='font-family:sans-serif;'>Build Your Bundle</h2><p>Select your favorite dishes and mocktails to create a custom bundle. Dietary filters coming soon!</p><form id='bundle-form'><div style='border:1px solid #ccc;padding:1rem;margin-bottom:1rem;'>
+  <input type='checkbox' name='bundle-item' value='Citrus Lentil Salad' data-price='12' />
+  <label>Citrus Lentil Salad -  <span style='font-size:0.9em;color:#666;'>(Vegan, Gluten-Free)</span></label>
+</div><p><strong>Total:</strong> $<span id='bundle-total'>0</span></p><button type='submit'>Build My Bundle</button></form></section><section id='filters' style='padding:2rem;'>
+  <h2 style='font-family:sans-serif;'>Filter by Dietary Preference</h2>
+  <button onclick="filterItems('Vegan')">Vegan</button>
+  <button onclick="filterItems('Gluten-Free')">Gluten-Free</button>
+  <button onclick="filterItems('High-Protein')">High-Protein</button>
+  <button onclick="filterItems('All')">Show All</button>
+</section><script>
+function filterItems(tag) {
+  const items = document.querySelectorAll("[data-tags]");
+  items.forEach(item => {
+    const tags = item.getAttribute("data-tags");
+    if (tag === "All" || (tags && tags.includes(tag))) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
